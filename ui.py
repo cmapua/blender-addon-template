@@ -18,7 +18,10 @@ class MyPanel(CommonPanel, Panel):
 
         layout = self.layout
         assert layout is not None
-        layout.operator(operators.MyOperator.bl_idname, text="Click Me")
+        
+        col = layout.column()
+        col.operator(operators.MyOperator.bl_idname, text=operators.MyOperator.bl_label)
+        col.operator(operators.MyOperatorWithPopup.bl_idname, text=operators.MyOperatorWithPopup.bl_label)
 
 
 classes = [
