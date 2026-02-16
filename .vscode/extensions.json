@@ -1,0 +1,7 @@
+{
+    "recommendations": [
+        "ms-python.python",
+        "jacqueslucke.blender-development",
+        "tamasfe.even-better-toml"
+    ]
+}
